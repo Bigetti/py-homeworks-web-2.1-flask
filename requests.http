@@ -1,0 +1,22 @@
+### advertisements.rest
+
+#Для создания объявления отправьте с JSON-данными, содержащими title, description и owner.
+POST http://localhost:5000/advertisement 
+Content-Type: application/json
+
+{
+    "title": "Example Title2",
+    "description": "Example Description",
+    "owner": "Example Owner"
+}
+
+
+###Для получения объявления отправьте , где {id} - идентификатор объявления.
+
+GET http://localhost:5000/advertisement/2
+
+
+
+
+###Для удаления объявления отправьте , где {id} - идентификатор объявления.
+DELETE http://localhost:5000/advertisement/2
